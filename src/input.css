@@ -1,0 +1,25 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* icon */
+@import url("/your-path-to-uicons/css/uicons-[your-style].css");
+
+/* tailwind */
+@import "tailwindcss";
+
+/* darkmode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* theme */
+@theme {
+  --breakpoint-xs: 20rem;
+  --font-dancing: "Dancing Script";
+  --font-inter: "Inter";
+  --color-primary: #14b8a6;
+  --color-aura: #663399;
+  --color-dark: #37474f;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-dark;
+}

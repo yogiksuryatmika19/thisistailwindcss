@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- google fonts -->
+
+    <script>
+      // Cegah FOUC: Set tema lebih awal sebelum halaman terlihat
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia(
+              "(prefers-color-scheme: dark)"
+            ).matches)
+      );
+    </script>
+  </head>
+
+  <body
+    class="font-inter dark:bg-slate-800 dark:text-slate-800">
+    <div class="px-5">
+      <!-- judul header -->
+      <h1
+        class="text-5xl font-bold text-center my-8 dark:text-slate-500">
+        Mari Belajar
+        <span
+          class="bg-gradient-to-r from-red-800 to-yellow-400 text-transparent bg-clip-text sm:max-w-1 text-5xl">
+          TailWindCSS
+        </span>
+      </h1>
+    </div>
+
+    <!-- spacing and sizing -->
+    <section
+      class="my-8 p-8 bg-gradient-to-r from-indigo-500 via-pink-300 to-lime-300 w-full">
+      <h2
+        class="my-10 text-center text-4xl font-bold bg-indigo-800 text-white font-dancing">
+        Spacing
+      </h2>
+      <div
+        class="p-15 text-center mx-auto border-2 border-red-500 bg-lime-400 w-60">
+        <p class="bg-transparent border-2 border-red-600">
+          Padding
+        </p>
+      </div>
+      <div
+        class="m-10 w-60 mx-auto h-50 border-2 border-red-600 flex">
+        <p class="m-auto">Margin</p>
+      </div>
+      <div
+        class="p-15 text-center w-60 mx-auto border-2 border-red-500 bg-lime-400">
+        <p class="bg-transparent border-2 border-red-600">
+          Padding
+        </p>
+      </div>
+    </section>
+
+    <!-- typography -->
+    <h1
+      class="text-4xl text-center font-bold bg-red-700 text-white font-dancing">
+      Typography
+    </h1>
+
+    <section
+      class="max-w-3xl mx-auto my-8 p-16 text-justify bg-black text-white">
+      <h2 class="text-3xl font-bold underline">
+        Lorem, ipsum.
+      </h2>
+      <div class="text-xs leading-3">
+        <p class="mb-4">
+          Dibuat oleh
+          <span
+            class="font-dancing text-xl font-bold text-red-500"
+            >yogisuryatmika</span
+          >
+          pada
+          <span class="font-dancing font-bold text-red-500"
+            >5/10/2025</span
+          >
+        </p>
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet
+        <a href="" class="text-red-500 underline"
+          >adipisicing</a
+        >
+        adipisicing elit. Pariatur praesentium explicabo
+        aperiam quidem veniam libero quaerat reiciendis,
+        amet vero dolorem eligendi ratione neque, nesciunt
+        rerum ad debitis exercitationem cupiditate! Aut
+        corporis veniam delectus blanditiis amet nam facere
+        rerum libero inventore.
+      </p>
+
+      <blockquote class="font-thin italic my-4 text-sm">
+        Lorem ipsum dolor, sit amet aconsectetur adipisicing
+        elit. Maiores deleniti, vel cupiditate eos excepturi
+        saepe assumenda pariatur nisi? Autem illo dolorum
+        aliquam iusto, assumenda ea molestiae repellat
+        debitis deserunt fugiat accusantium molestias
+        distinctio. Alias qui eaque dolore quia, sint
+        quibusdam provident, laboriosam corrupti ut
+        molestiae impedit fuga excepturi repudiandae nobis.
+      </blockquote>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Sed quos aut tempore dolor vitae praesentium
+        cumque, esse exercitationem ad, laudantium harum?
+        Accusamus, dicta non. Optio repudiandae impedit eius
+        accusantium fuga!
+      </p>
+    </section>
+
+    <!-- backround dll -->
+    <div
+      class="max-w-xl h-96 my-10 mx-auto bg-[url('../img/full.jpg')] bg-cover p-20 overflow-scroll bg-fixed">
+      <p class="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Dolorum dolores cumque velit, dolorem
+        perferendis dignissimos ipsum provident consequatur
+        accusantium ab modi neque dolor labore repellendus
+        suscipit nulla itaque obcaecati quasi amet, quo eos
+        esse quia? Earum eum pariatur qui commodi vero,
+        corrupti quidem sapiente cupiditate totam incidunt.
+        Perferendis fugit sed odio eos sequi corrupti
+        quaerat harum excepturi tenetur at. Deserunt earum
+        possimus non vero quibusdam voluptatem ipsum aut
+        architecto, corporis totam sapiente nemo,
+        consequuntur nostrum veniam reiciendis, laborum ut
+        vitae odit impedit! Quos blanditiis neque doloribus
+        ipsum natus est similique cumque vel accusamus
+        debitis? Exercitationem unde voluptatem, in neque,
+        natus ducimus eaque voluptas deleniti, suscipit
+        optio harum iste! Cum, dolorem consectetur et, sint
+        illum debitis deleniti sunt omnis quidem numquam,
+        eaque inventore facilis? Porro, itaque maxime nisi
+        perferendis necessitatibus nesciunt? Repudiandae
+        nesciunt commodi accusantium nostrum pariatur
+        quidem, eos at soluta sint officia delectus porro
+        molestiae corporis, natus doloribus. Est tempora non
+        at aliquam eaque, similique perspiciatis unde sint.
+        Ut distinctio, aut asperiores ipsa cum a, ipsum enim
+        aliquam tempore repellendus mollitia, corporis ex.
+        Neque corporis modi beatae. Nihil, temporibus?
+        Deserunt perferendis consectetur nihil nisi dolores?
+        Veritatis temporibus vero fugit sit maiores quidem,
+        eius animi quaerat itaque ipsam, iusto ab. Pariatur!
+      </p>
+    </div>
+
+    <!-- backround effect dll -->
+    <div
+      class="my-10 bg-[url(../img/full.jpg)] bg-cover max-w-xl h-90 mx-auto rounded-xl border-8 border-slate-400 shadow-xl shadow-slate-800 flex">
+      <div
+        class="w-50 h-50 bg-white/30 m-auto backdrop-blur-sm flex rounded-full shadow-2xl shadow-black">
+        <h2
+          class="text-center font-dancing m-auto text-3xl font-bold">
+          Lorem, ipsum.
+        </h2>
+      </div>
+    </div>
+
+    <!-- batas -->
+    <hr class="my-10" />
+
+    <!-- pseudo class -->
+
+    <!-- button -->
+    <div class="my-10">
+      <button
+        class="dark:bg-slate-500 dark:hover:bg-slate-600 text-white font-dancing text-xl block bg-sky-500 h-12 w-30 rounded-full m-auto p-1 text-center cursor-pointer hover:bg-sky-600 active:bg-sky-800 focus:ring-4 focus:ring-sky-300">
+        Simpan
+      </button>
+    </div>
+    <!-- end button -->
+
+    <!-- card -->
+    <div
+      class="dark:hover:bg-slate-500 dark:group-hover:text-slate-300 max-w-lg my-10 border border-slate-400 mx-auto p-8 rounded-2xl shadow-md shadow-slate-700 group hover:bg-sky-500">
+      <h5
+        class="dark:text-slate-500 text-3xl my-5 font-bold selection:bg-lime-300 group-hover:text-slate-600 dark:selection:bg-slate-400 dark:selection:text-slate-900">
+        Lorem, ipsum.
+      </h5>
+
+      <!-- paragraf -->
+      <p
+        class="text-slate-500 group-hover:text-slate-700 selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-line:font-dancing tracking-wider first-line:font-bold group-hover:first-line:text-red-600 dark:group-hover:first-line:text-indigo-900 dark:selection:bg-slate-400 dark:selection:first-letter:text-slate-900 group-hover:first-line:underline first-letter:text-7xl first-letter:float-left first-letter:p-2 dark:group-hover:first-letter:text-slate-600 group-hover:first-letter:text-red-600 dark:selection:first-line:text-slate-900">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ad enim cumque hic nesciunt maxime quod
+        temporibus suscipit amet dolor, in, expedita veniam,
+        tenetur minima molestias fugit. Impedit totam
+        tempore, necessitatibus corporis iusto, sit
+        assumenda voluptate explicabo magnam maiores
+        consectetur? Repellendus.
+      </p>
+    </div>
+
+    <!-- form -->
+    <div
+      class="max-w-lg border border-slate-500 rounded-xl shadow-md shadow-slate-600 my-10 mx-auto p-6">
+      <form action="">
+        <label for="email" class="my-2 block w-full">
+          <span
+            class="font-bold after:content-['*'] after:text-pink-400 after:mx-0.5 dark:text-slate-500"
+            >Email</span
+          >
+          <input
+            required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="masukkan email..."
+            class="dark:border-slate-500 w-full h-10 border-2 border-gray-300 px-4 rounded-md placeholder:text-slate-400 focus:outline-0 focus:ring-1 focus:ring-sky-300 focus:border-4 focus:border-sky-300 invalid:text-pink-600 invalid:ring-pink-500 invalid:focus:ring-pink-600 invalid:focus:border-pink-600 peer dark:text-slate-400" />
+          <p
+            class="text-sm invisible text-right text-pink-700 peer-invalid:visible">
+            email tidak valid!
+          </p>
+          <p
+            class="text-sm invisible text-right text-sky-700 peer-valid:visible">
+            email valid!
+          </p>
+        </label>
+      </form>
+    </div>
+
+    <div class="w-full p-10 flex">
+      <button
+        id="theme-toggle"
+        class="rounded-lg bg-sky-500 dark:bg-gray-400 text-white dark:text-slate-700 cursor-pointer w-19 h-15 mx-auto hover:bg-sky-600">
+        Theme
+      </button>
+    </div>
+
+    <!-- batas -->
+
+    <hr class="my-20" />
+    <!-- animation dan transition -->
+    <div
+      class="flex h-12 items-center p-8 my-10 bg-sky-500 text-slate-200 font-dancing text-2xl border-b-2 shadow-md shadow-slate-500">
+      <ul
+        class="flex flex-1/4 justify-center w-full border-x-4 mr-4">
+        <li
+          class="h-12 w-12 border-2 border-white hover:brightness-105 overflow-hidden rounded-full">
+          <a href=""
+            ><img src="../img/profile.jpg" alt=""
+          /></a>
+        </li>
+      </ul>
+      <ul
+        class="flex-3/4 justify-around w-full px-4 hidden lg:flex">
+        <li
+          class="hover:scale-110 hover:brightness-105 hover:text-slate-50">
+          <a href="">Home</a>
+        </li>
+        <li
+          class="hover:scale-110 hover:brightness-105 hover:text-slate-50">
+          <a href="">About</a>
+        </li>
+        <li
+          class="hover:scale-110 hover:brightness-105 hover:text-slate-50">
+          <a href="">Posts</a>
+        </li>
+        <li
+          class="hover:scale-110 hover:brightness-105 hover:text-slate-50">
+          <a href="">Service</a>
+        </li>
+        <li
+          class="hover:scale-110 hover:brightness-105 hover:text-slate-50">
+          <a href="">Others</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- animasi 1 -->
+    <div
+      class="my-20 w-50 h-50 bg-sky-400 mx-auto hover:rotate-180 hover:skew-6 transition">
+      <h1
+        class="text-9xl text-center p-8 font-bold border-8 border-slate-300">
+        1
+      </h1>
+    </div>
+
+    <!-- animasi 2 -->
+    <div class="w-50 h-50 mx-auto my-20 group">
+      <div
+        class="w-50 h-50 bg-rose-400 mx-auto border-8 border-rose-300 text-9xl py-7 text-center font-bold transition group-hover:translate-x-90 duration-1000 group-hover:rounded-full group-hover:rotate-360 rounded-full">
+        2
+      </div>
+    </div>
+
+    <hr class="my-20" />
+
+    <!-- layouting -->
+    <h1
+      class="w-full bg-rose-500 h-20 flex justify-center items-center">
+      <span class="text-4xl font-bold font-dancing"
+        >Layouting</span
+      >
+    </h1>
+    <div
+      class="w-80 mx-auto border border-slate-300 shadow-md shadow-slate-500 p-10 rounded-md relative my-20 lg:w-xl lg:p-15">
+      <div
+        class="w-10 h-10 bg-sky-200 flex rounded-full absolute -top-4 left-1/2 -translate-x-1/2 cursor-pointer text-white hover:scale-110">
+        <a href="#" class="m-auto">🔝</a>
+      </div>
+      <img
+        src="../img/profile.jpg"
+        alt=""
+        class="float-left w-30 p-3" />
+      Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Consequatur minus est accusamus nihil quaerat?
+      Officia totam eligendi voluptate, quae optio itaque
+      necessitatibus distinctio! Quibusdam exercitationem
+      quam doloremque ratione. Error, totam.
+    </div>
+
+    <!-- gallery -->
+    <div
+      class="sm:w-90 p-10 mx-auto columns-2 lg:columns-4 lg:w-3xl">
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+      <img src="../img/profile.jpg" alt="" class="mb-5" />
+    </div>
+
+    <hr class="py-5" />
+
+    <!-- responsive  -->
+    <div class="sm:w-sm mx-auto p-10 lg:w-3xl">
+      <h1 class="text-3xl font-bold my-10">
+        Yogi
+        <span
+          class="bg-gradient-to-r from-sky-300 to-indigo-500 bg-clip-text text-transparent"
+          >Suryatmika</span
+        >
+      </h1>
+
+      <img
+        src="../img/full.jpg"
+        alt=""
+        class="rounded-xl mb-5 shadow-md shadow-slate-400 lg:w-xs lg:float-right mr-40" />
+      <p class="font-dancing">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Dolore eaque harum corporis ea, veniam nisi
+        delectus repudiandae itaque nulla, ipsam ipsa
+        reprehenderit ex dolores accusamus dicta nemo
+        deserunt iure a ratione. Molestias fugit eius natus
+        eveniet necessitatibus animi dignissimos quaerat
+        accusantium tempore dolor quibusdam velit expedita
+        cum pariatur, quisquam voluptate! Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Doloribus
+        explicabo tempora voluptates numquam ipsam excepturi
+        voluptatum suscipit modi consectetur est. Saepe sit
+        iusto eaque commodi repellat possimus deserunt
+        voluptas consequatur.
+      </p>
+
+      <div
+        class="bg-rose-500 w-30 h-10 text-center flex rounded-full cursor-pointer my-10 hover:bg-rose-700 clear-both font-bold tracking-wider">
+        <span class="m-auto text-white uppercase"
+          >Subscribe</span
+        >
+      </div>
+    </div>
+    <div>
+      <hr class="py-3 w-full" />
+    </div>
+    <div>
+      <h1
+        class="text-center text-4xl p-2 my-10 bg-lime-300 font-dancing font-bold">
+        Flexbox
+      </h1>
+      <div class="font-dancing">
+        <ul
+          class="flex flex-row justify-center gap-2 p-3 font-bold text-xl bg-sky-300 border-b-2 border-slate-300 mb-10 w-full">
+          <li class="mr-10">Profile</li>
+          <li class="mr-3">Home</li>
+          <li class="mr-3">Blog</li>
+          <li class="mr-3">Posts</li>
+          <li class="mr-3">Settings</li>
+        </ul>
+      </div>
+      <div class="py-3 w-full mx-auto">
+        <h1 class="text-2xl font-bold text-center">
+          Lorem, ipsum.
+        </h1>
+      </div>
+      <div
+        class="flex w-full mx-auto p-3 text-center font-dancing lg:w-3xl lg:p-10">
+        <!-- paragraf 1 -->
+        <div class="basis-2/5 order-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quisquam odit nulla, obcaecati
+            nesciunt illo possimus fuga saepe illum
+            molestias, eligendi quam distinctio ducimus
+            architecto, aut quod quidem suscipit? In, ad.
+          </p>
+        </div>
+        <!-- paragraf 2 -->
+        <div class="basis-3/5 order-1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quibusdam perferendis ipsam
+            tempora, veritatis minus sapiente nemo, omnis
+            asperiores, ducimus dignissimos eaque numquam
+            suscipit consequatur? Provident dolore, totam
+            facere consequatur dicta nisi quos reprehenderit
+            sequi. Cupiditate dolore reprehenderit, dicta
+            inventore distinctio culpa delectus minima?
+            Ducimus quis natus aperiam ratione enim iusto.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="py-5 flex flex-row flex-wrap p-5 justify-center gap-4 lg:gap-20 lg:w-3xl lg:mx-auto">
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+        <img
+          src="../img/profile.jpg "
+          alt=""
+          class="w-20" />
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- grid -->
+      <h1 class="text-4xl font-bold text-center">Grid</h1>
+      <div
+        class="mx-auto my-10 grid grid-cols-3 text-center w-full">
+        <div class="bg-green-300 col-span-3">header</div>
+        <div class="grid grid-cols-3 col-span-3">
+          <div class="bg-red-300 col-span-1">sidebar</div>
+          <div class="bg-blue-300 col-span-2">main</div>
+        </div>
+        <div class="bg-amber-200 col-span-3">footer</div>
+      </div>
+      <!-- end grid -->
+
+      <!-- flex gallery start -->
+      <div
+        class="flex flex-row lg:flex-row flex-wrap justify-around gap-20 w-sm mx-auto">
+        <!-- card start -->
+
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+        <div
+          class="w-50 border shadow-md shadow-slate-600 rounded-md my-10 lg:w-80">
+          <img
+            src="../img/profile.jpg"
+            alt=""
+            class="w-full" />
+          <div class="p-3 text-center">
+            <h2 class="text-center text-2xl font-bold">
+              Lorem, ipsum.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur ,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <!-- card end -->
+      </div>
+
+      <!-- flex gallery end -->
+    </div>
+    <script>
+      const button =
+        document.getElementById("theme-toggle");
+
+      button.addEventListener("click", () => {
+        const isDark =
+          document.documentElement.classList.contains(
+            "dark"
+          );
+
+        if (isDark) {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        }
+      });
+    </script>
+  </body>
+</html>
